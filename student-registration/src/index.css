@@ -244,6 +244,7 @@ ul.student-list li:hover {
     padding: 15px;
   }
 
+  
   ul.student-list {
     grid-template-columns: 1fr;
   }
