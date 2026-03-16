@@ -2,9 +2,11 @@ import StudentForm from "../components/StudentForm";
 
 export default function Register() {
   return (
-    <div>
+    <div className="page-container">
       <h1>Register Student</h1>
-      <StudentForm />
+      <div className="card">
+        <StudentForm />
+      </div>
     </div>
   );
 }

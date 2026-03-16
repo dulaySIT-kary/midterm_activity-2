@@ -1,14 +1,9 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
-
-// Sample students
-const initialStudents = [
-  { id: 1, name: "John Doe", email: "john@example.com", course: "Math" },
-  { id: 2, name: "Jane Smith", email: "jane@example.com", course: "Science" },
-];
+import { useContext } from "react";
+import { StudentContext } from "../contexts/StudentContext";
 
 export default function StudentList() {
-  const [students] = useState(initialStudents);
+  const { students } = useContext(StudentContext);
 
   return (
     <ul className="student-list">
